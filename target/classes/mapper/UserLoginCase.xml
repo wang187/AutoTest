@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wang.model">
+
+    <select id="loginCase" parameterType="Integer" resultType="com.wang.model.UserLoginCase">
+        select * from userlogin where caseId = #{caseId};
+    </select>
+
+    <select id="queryCustomerList" parameterType="Integer" resultType="com.wang.model.QueryCustomerListCase">
+        select * from QueryCustomerList where caseId = #{caseId};
+    </select>
+</mapper>
+     
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+   
